@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal's DevOps Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease-in-out;
+        }
+        .profile img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .projects {
+            padding: 20px;
+            text-align: center;
+        }
+        .project-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            background-color: #e3f2fd;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        h3 {
+            color: #0056b3;
+        }
+        p {
+            font-size: 16px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="https://myterraforms3staticwebsiteproject2025.s3.us-east-1.amazonaws.com/profile.png" alt="Prajwal's Profile Image">
+            <h1>Prajwal - DevOps Engineer</h1>
+            <p>Automating Infrastructure & Optimizing Performance</p>
+        </div>
+    </header>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>CI/CD Pipeline Automation</h3>
+                <p>Implemented Jenkins pipeline for automated deployments.</p>
+            </div>
+            <div class="project">
+                <h3>Infrastructure as Code</h3>
+                <p>Used Terraform and Ansible for provisioning infrastructure.</p>
+            </div>
+            <div class="project">
+                <h3>Cloud Cost Optimization</h3>
+                <p>Optimized AWS resources to reduce costs by 30%.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
